@@ -1,0 +1,168 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = await getCollection('blog');
+
+const pinnedPosts = posts
+    .filter((post) => post.data.pinned)
+    .slice(0, 3);
+
+const latestPosts = posts
+    .sort(
+        (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+    )
+    .slice(0, 3);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<section class="intro">
+			<img class="bg" src="/slideshow/beam1.png" alt="">
+			<div class="intro-content">
+				<h1>{SITE_TITLE}</h1>
+				<a href="https://github.com/n7pz"> <img class="pfp" src="https://avatars.githubusercontent.com/u/256556664"> </a>
+				<p class="intro-description">Aspiring sysadmin and security researcher when I lock in.</p> <p  class="intro-description"> Racing game modding enthusiast, also learning and tinkering with old Unity3D and Adobe Shockwave for the love of the game. You may also know me for being pretty good at some videogames. </p> <p  class="intro-description"> Currently learning Linux, networking, DB's, cybersec and also web development when I feel silly... and whatever comes ahead of me. Figuring out how things work and documenting it is a lot about me. </p> <p  class="intro-description">Below you'll find my blog posts:</p>
+			</div>
+		</section>
+		<main>
+			
+
+			<section class="pinned"> <!-- section for PINNED posts -->
+				<h2>Pinned posts</h2>
+				
+				{pinnedPosts.map((post) => (
+					<article>
+						<h3>
+							<a href={`/blog/${post.id}/`}>
+								{post.data.title}
+							</a>
+						</h3>
+						<p>{post.data.description}</p>
+					</article>
+				))}
+			</section>
+
+			<section class="latest"> <!--section for latest posts -->
+				<h2>Latest posts</h2>
+
+				{latestPosts.map((post) => (
+					<article>
+						<h3>
+							<a href={`/blog/${post.id}/`}>
+								{post.data.title}
+							</a>
+						</h3>
+						<p>{post.data.description}</p>
+						<p class="date">
+							<FormattedDate date={post.data.pubDate} />
+							</p>
+					</article>
+				))}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+	.intro {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	filter: brightness(40%) blur(3px);
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	transform: translateY(-50px);
+}
+
+.intro-content h1{
+	font-size: 90px;
+}
+
+.pfp{
+	width:222px;
+	height:222px;
+	border-radius: 50%;
+	border: 3px solid var(--accent);
+}
+
+.intro-description{
+	max-width: 700px;
+	text-align: center;
+}
+
+.pinned h2, .latest h2{
+	color: var(--textbright);
+	margin-bottom: 1rem;
+	text-align: center;
+	border-bottom: 1px solid var(--textbright);
+	width: 100%;
+
+}
+.pinned, .latest{
+	margin-top: 0.2rem;
+}
+.pinned h3, .latest h3{
+	margin: 0;
+	padding-top: 1rem;
+}
+.pinned p, .latest p, .date{
+	margin-top: 0.02rem;
+	margin-bottom: 0.02rem;
+}
+
+
+.latest{
+	margin-top: 10rem;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:1rem;
+}
+.latest h2{
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+.pinned{
+	margin-top: 0.2rem;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:1rem;
+}
+.pinned h2 {
+	grid-column: 1 / -1;
+}
+h1{
+	margin-bottom: -0.5rem;
+}
+
+
+</style>
