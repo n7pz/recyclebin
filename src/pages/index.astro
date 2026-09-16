@@ -28,7 +28,7 @@ const latestPosts = posts
 	<body>
 		<Header />
 		<section class="intro">
-			<img class="bg" src="/slideshow/beam1.png" alt="">
+			<img class="bg" src={`${import.meta.env.BASE_URL}/slideshow/beam1.png`} alt="">
 			<div class="intro-content">
 				<h1>{SITE_TITLE}</h1>
 				<a href="https://github.com/n7pz"> <img class="pfp" src="https://avatars.githubusercontent.com/u/256556664"> </a>
@@ -44,7 +44,7 @@ const latestPosts = posts
 				{pinnedPosts.map((post) => (
 					<article>
 						<h3>
-							<a href={`/blog/${post.id}/`}>
+							<a href={`${import.meta.env.BASE_URL}/blog/${post.id}/`}>
 								{post.data.title}
 							</a>
 						</h3>
@@ -59,7 +59,7 @@ const latestPosts = posts
 				{latestPosts.map((post) => (
 					<article>
 						<h3>
-							<a href={`/blog/${post.id}/`}>
+							<a href={`${import.meta.env.BASE_URL}/blog/${post.id}/`}>
 								{post.data.title}
 							</a>
 						</h3>

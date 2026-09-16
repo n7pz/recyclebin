@@ -32,5 +32,5 @@ And for now that's pretty much it.. Since this post will be pinned for orientati
 ~ N
 
 <p style="text-align: center;">
-    <img src="/images/misc/birdie.png" alt="whatever">
+    <img src="/recyclebin/images/misc/birdie.png" alt="whatever">
 </p>
