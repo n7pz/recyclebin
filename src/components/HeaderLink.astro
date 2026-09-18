@@ -4,8 +4,12 @@ import type { HTMLAttributes } from 'astro/types';
 type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
-const pathname = Astro.url.pathname;
-const isActive = href === pathname;
+const pathname = Astro.url.pathname.replace(/\/$/, '');
+const normalizedHref = href.replace(/\/$/, '');
+
+
+const isActive = normalizedHref === pathname;
+
 
 ---
 
