@@ -5,15 +5,15 @@
  */
 
 :root {
-	--maintext: #c2c2c2;
+	--maintext: #ece7e7;
 	--textbright: #e9e5e5;
-	--titletext: #989eaa;
+	--titletext: #bec3cc;
 	--headertext: #ffffff;
-	--textmuted: #b3b3b3;
-	--accent: #c1c2d3;
-	--accent-dark: #bcbdcf;
-	--silver: #777575;
-	--silver2: #aaa9a9;
+	--textmuted: #c2c2c2;
+	--accent: #dadae6;
+	--accent-dark: #c9c9d4;
+	--silver: #949191;
+	--silver2: #b6b4b4;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -37,7 +37,7 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 900px;
+	width: 1200px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;

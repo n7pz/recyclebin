@@ -2,9 +2,10 @@
 title: 'Recycle Bin 101'
 description: 'Guide to my blog'
 pubDate: 'Sep 15 2026'
+heroImage: '../../assets/blog-placeholder-5.jpg'
 pinned: true
 ---
-<small><p style="text-align: center;">Last updated: September 16th 2026</p></small>
+<small><p style="text-align: center;">Last updated: September 27th 2026</p></small>
 
 
 #### Hi everyone,
@@ -20,7 +21,7 @@ So this blog will be basically a mix of the former: I will talk about projects s
 I will try to keep it informal and at least have some of the posts reach a comedic degree.  
 <small><i>(But you never know if you have to show your personal projects for school so I'll keep it mildly professional)</i></small>
 
-As of writing this I haven't pushed the project to Git yet, sorry if it looks ugly or unfinished, it's my first time building a website w/ Astro.
+As of writing this I haven't pushed the project to Git yet, sorry if it looks ugly or unfinished **(FOR THE RECORD, I used Astro's blog template to base the website off of. There's still LOTS of traces of said template which I will be getting rid of gradually)**, it's my first time building a website w/ Astro.
 Posts here are written in Markdown and published through Astro. Some posts might contain code, screenshots, experiments, or whatever else is useful for documenting what I'm doing.
 
  Needless to say this will always be a work in progress as I will be restyling and adding features according to my necessities. Expect some new posts coming really soon (hopefully)
