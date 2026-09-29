@@ -6,7 +6,7 @@ heroImage: '../../assets/unity2npm0.jpg'
 pinned: false
 ---
 
-To be completely honest with y'all I wasn't expecting for this to be my first substantial post in the website. However, since my other projects in the works to document in here are gonna take a while since I'm busy with school and such I figured I'd just talk about this here, since it has to do with a lot of things I will be dissecting on this page. Also hadn't seen anyone connect the 2 dots, so it'd be worth saying so myself.
+To be completely honest with y'all I wasn't expecting for this to be my first substantial post in the website. However, since my other projects that I want to document in here are gonna take a while since I'm busy with school and such I figured I'd just talk about this here, since it has to do with a lot of things I will be dissecting on this page. Also, I hadn't seen anyone connect the 2 dots, so it'd be worth saying so myself.
 
 ##### Throwback to a few months ago...
 
@@ -85,7 +85,7 @@ There were also other modes from TRP such as deathmatch and a CTF mode, along wi
 
 As you may have also noticed, lots of TrackMania assets all over the place.
 
-And I can't forgetting that as tradition in nearly all TM games, this game also had its own track editor and player-made tracks, which was nearly the entire gameplay loop of the game.
+And I can't be forgetting that as tradition in nearly all TM games, this game also had its own track editor and player-made tracks, which was nearly the entire gameplay loop of the game.
 
 <p align="center">
     <img src="/recyclebin/images/referencemedia/trackeditor0.png" alt="Track editor">
@@ -105,7 +105,7 @@ Obviously a game using assets from TM and being quite popular as a browser game 
 
 However before that, for what I've been able to find, it could have been plausible that Nadeo (TrackMania's developer studio) already found out about the game.
 
-While whether there was a heads up on behalf of Nadeo towards the developer or not is unknown, however SoulKey decided to remove *majority* the assets pertaining to TMNF anyway (I say majority because even as of now there's still loads of stuff that belongs to TM, just reskinned). So I have 2 possible theories here:
+While whether there was a heads up on behalf of Nadeo towards the developer or not is unknown, SoulKey decided to remove *majority* of the assets pertaining to TMNF anyway (I say majority because even as of now there's still loads of stuff that belongs to TM, just reskinned). So I have 2 possible theories here:
 
 - The developer didn't want to face legal trouble and removed the assets before Nadeo figured out
 - Nadeo caught the developer and had to remove the assets either way
@@ -118,7 +118,7 @@ I made some quick comparison image to show the before and after:
     <img src="/recyclebin/images/referencemedia/trocomparison.png">
 </p>
 
-This kinda reaffirms what I said earlier about reskinned assets. But if they have been able to keep them for over a decade guess they weren't slimed out lol
+This kinda reaffirms what I said earlier about reskinned assets. But if they have been able to keep them for over a decade, I guess they weren't slimed out lol
 
 
 ## TM players catch up
@@ -127,7 +127,7 @@ This one is particularly funny. A few years ago, several trackmania players incl
 
 Their representation of TRO? A mobile trackmania copy, which isn't really a lie, you get what the game shows to be.....
 
-It's specially funny because TM players who had never heard of the game were so oblivious to the precedents of this game when they found it, which in itself is innocuous really. I personally found it hilarious when I saw their reaction myself. Let the videos speak for themselves.
+It's specially funny because TM players who had never heard of the game were so oblivious to the precedents of this game when they found it, which itself is innocuous really. I personally found it hilarious when I saw their reaction myself. Let the videos speak for themselves.
 
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2wKWpvTl9-4?si=fYonfgfJFXXwhfGa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -141,19 +141,19 @@ It's specially funny because TM players who had never heard of the game were so 
 To be fair, I can't say it's LIVIN LAVISH!!! But it is still playable.
 
 It has been a few years since I last played it myself (and dare I say i lost the account I had)
-In that timespan it appeared that the person maintaining the game after SoulKey's work (31416) also left development, and for whatever reasons the previous build of the game was pulled from the play store, just like TRP.
+during that time it appeared that the person maintaining the game after SoulKey's work (31416) also left development, and for whatever reasons, the previous build of the game was pulled from the play store, just like TRP.
 
 
-However, another member of the community took their place and is now in charge of maintaining both games. By the looks of it, they're being frequently updated and even getting new content. Definitely much better than it being dead fully.
+However, another member of the community took their place and is now in charge of maintaining both games. By the looks of it, they're being frequently updated and even getting new content. Definitely much better than it being completely dead.
 
-In fact, you can simply play the game yourself, as both of them are available in Kongregate and other platforms
+In fact, you can simply play the game yourself, as both of them are available on Kongregate and other platforms
 
 https://www.kongregate.com/en/games/soulkey/trackracing-pursuit
 https://www.kongregate.com/en/games/soulkey/trackracing-online-tro
 
 ### Dude, how does this date back to the initial npm security incident?
 
-I can't really find a way to directly connect them. Sometimes as a developer you're sitting one day making some games in Unity and then another day 10 years after you're uploading AI tools to Git. Time simply goes by.
+I can't really find a way to directly connect them. Sometimes as a developer you're sitting one day in your chair making some games in Unity and then another day 10 years after you're uploading AI tools to Git. Time simply goes by.
 
 ## Conclusion 
 
